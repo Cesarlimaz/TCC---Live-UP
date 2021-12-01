@@ -1,0 +1,144 @@
+@font-face {
+	font-family: Poppins-Regular;
+	src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+	font-family: Poppins-Medium;
+	src: url("../fonts/poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+	font-family: Poppins-Bold;
+	src: url("../fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+	font-family: Poppins-SemiBold;
+	src: url("../fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+.b-area {
+	margin-left: 10%;
+	width: 80%;
+	height: 250px;
+	background-color: #f7960b;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30px;
+}
+
+.b-area text {
+	font-family: Poppins-SemiBold;
+	font-size: 23px;
+	color: #fff;
+}
+.section-area {
+	align-items: center;
+	margin-left: 34%;
+	margin-top: 2%;
+}
+:root {
+	--background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+	--gray: #f7960b;
+	--darkgray: #ffffff;
+}
+
+select {
+	/* Reset Select */
+	appearance: none;
+	outline: 0;
+	border: 0;
+	box-shadow: none;
+	/* Personalize */
+	flex: 1;
+	padding: 0 1em;
+	color: #000;
+	background-color: var(--darkgray);
+	background-image: none;
+	cursor: pointer;
+	font-family: poppins-SemiBold;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+	display: none;
+}
+/* Custom Select wrapper */
+.select {
+	position: relative;
+	display: flex;
+	width: 21em;
+	height: 3em;
+	border-radius: 0.25em;
+	overflow: hidden;
+}
+/* Arrow */
+.select::after {
+	content: "\25BC";
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1em;
+	background-color: #fff;
+	transition: 0.25s all ease;
+	pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+	color: #f39c12;
+}
+
+/* Other styles*/
+.select body {
+	color: #fff;
+	background: var(--background-gradient);
+}
+.select h1 {
+	margin: 0 0 0.25em;
+}
+.select a {
+	font-weight: bold;
+	color: var(--gray);
+	text-decoration: none;
+	padding: 0.25em;
+	border-radius: 0.25em;
+	background: white;
+}
+.button span {
+	position: relative;
+	display: inline-flex;
+	width: 180px;
+	height: 55px;
+	margin: 0 15px;
+	perspective: 1000px;
+}
+.button span a {
+	font-size: 12px;
+	letter-spacing: 1px;
+	transform-style: preserve-3d;
+	transform: translateZ(-25px);
+	transition: transform 0.25s;
+	font-family: Poppins-SemiBold;
+}
+.button span a:before,
+.button span a:after {
+	position: absolute;
+	content: "Buscar";
+	height: 40px;
+	width: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid black;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+.button span a:before {
+	background: #000;
+}
+
+.button {
+	margin-top: 5%;
+	margin-right: 43%;
+}
